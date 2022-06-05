@@ -4,6 +4,9 @@ import random
 import time
 import os
 
+# Import the draw_snake function
+from draw_snake import draw_snake
+
 # Initialize curses package
 stdscr = curses.initscr()
 
@@ -56,7 +59,7 @@ def main():
     WIN.addch(food[0], food[1], "#")
 
     # Draw the snake on the screen
-    draw_snake(snake)
+    draw_snake(snake, WIN)
     
     # Get the user input from the keyboard
     event = WIN.getch()
@@ -128,12 +131,6 @@ def main():
 
   # Return the final score of the game
   return score
-
-# Define a function to draw the snake on the screen
-def draw_snake(snake):
-  # Draw each pixel of the snake
-  for i in range(len(snake)):
-    WIN.addstr(snake[i][0], snake[i][1], "*")
 
 # Start the game
 if __name__ == "__main__":

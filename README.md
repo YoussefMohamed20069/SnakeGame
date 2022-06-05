@@ -5,9 +5,10 @@
 2. Type `python3 main.py`
 ## Important files
 1. `main.py`
-2. `requirements.txt`
+2. `draw_snake.py`
+3. `requirements.txt`
 
-## Used Pakcages
+## Used Packages
 1. `curses`
 2. `os`
 3. `time`
