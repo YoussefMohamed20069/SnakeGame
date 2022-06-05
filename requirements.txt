@@ -1,0 +1,5 @@
+pip install curses
+
+pip install random
+
+pip install time
